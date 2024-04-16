@@ -1,0 +1,165 @@
+/* add font */
+@font-face {
+    font-family: 'lobster';
+    src: url(/font/Lobster-Regular.ttf) format('truetype');
+}
+
+/* reset css */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, span, a, li, p, h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+span, a, p {
+    line-height: 1.4s;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover;
+}
+
+input {
+    color: inherit;
+    outline: none;
+    padding: 12px 8px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* file variables.css */
+:root {
+    --primary-color: #fff;
+    --primary-bg-color: #00204A;
+    --secondary-color: #0C0C0C;
+    --secondary-bg-color: #fff;
+    --title-color: #00BBF0;
+    --color-gray: #272443;
+}
+
+.title--color-blue {
+    color: var(--title-color);
+}
+
+.title--large{
+    font-size: 50px;
+}
+
+.title--mg-bt-32 {
+    margin-bottom: 32px;
+}
+
+.title--mg-bt-16 {
+    margin-bottom: 16px;
+}
+
+.themes--primary {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+.themes--secondary {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-color);
+}
+
+.btn {
+    padding: 12px 24px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn--primary {
+    background-color: #00BBF0;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #007FA4;
+}
+
+.btn--small {
+    padding: 8px 12px;
+}
+
+.btn--large {
+    padding: 20px 46px !important;
+    font-size: 20px;
+}
+
+.btn--round {
+    border-radius: 20px;
+}
+
+.btn--mg-t-32 {
+    margin-top: 32px; 
+}
+
+.link--hover-blue:hover {
+    color: #00BBF0;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--gray {
+    color: var(--color-gray);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cricle {
+    border-radius: 50% !important;
+}
+
+.container {
+    max-width: 1140px;
+    padding-inline: 12px;
+    margin-inline: auto;
+}
+
+.container-2 {
+    max-width: 800px;
+    padding-inline: 12px;
+    margin-inline: auto;
+}
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pd-y-100 {
+    padding-block: 100px;
+}
+
+
+

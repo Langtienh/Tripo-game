@@ -1,0 +1,385 @@
+.nav-list a[href="/index.html"] {
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+#game {
+    background: url(/images/background-game.jpg);
+    height: 800px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.game__title {
+    font-size: 80px;
+}
+
+.game__desc {
+    position: relative;
+    top: 100px;
+}
+
+.game__download {
+    margin-top: 40px;
+}
+
+.game__download img {
+    width: 135px;
+    height: 45px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.game-list {
+    padding-block: 5px;
+    position: absolute;
+    transform: translateY(50%);
+    overflow-x: auto;
+    bottom: 0;
+    display: flex;
+    gap: 40px;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+.game-list::-webkit-scrollbar-track {
+    display: none;
+}
+.game__item {
+    flex-shrink: 0;
+    width: 236px;
+    height: 314px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 2px #ddd;
+    overflow: hidden;
+    position: relative;
+}
+
+.game__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.game__genre {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
+}
+
+.game__item:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FCFF72;
+}
+
+.item__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(225, 38, 38, 0.4);
+}
+
+.game__item:hover .item__overlay {
+    display: none;
+}
+
+.game__item:hover img {
+    transform: scale(1.2);
+}
+
+#intro {
+    background-color: #F6F4F0;
+    color: var(--color-gray);
+}
+
+.intro__container {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.intro__img {
+    max-width: 800px;
+    padding-inline: 12px;
+    margin: 100px auto 0;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.intro__img img {
+    border-radius: 20px;
+}
+
+.intro__img .left-bottom {
+    width: 240px;
+    position: absolute;
+    left: -80px;
+    bottom: 10px;
+}
+
+#store {
+    font-size: 18px;
+    background-color: #F6F4F0;
+    position: relative;
+    width: 100%;
+}
+
+.store {
+    margin-block: 100px;
+    position: relative;
+    padding: 100px 0;
+    margin-inline: auto;
+    max-width: 1140px;
+    min-height: 940px;
+    background: url(/images/bgr-list-game.png) no-repeat;
+    background-size: cover;
+}
+
+.card__item {
+    width: 390px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 4px 2px #ddd;
+}
+
+.card__header {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card__header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: #ddd;
+}
+
+#join {
+    padding-top: 100px;
+    background: url(/images/bgr-join.jpg);
+    color: #fff;
+    width: 100%;
+}
+
+.join__hero {
+    width: 40%;
+    margin-left: auto;
+}
+
+#contact {
+    min-height: 600px;
+    background: url(/images/bgr-contact.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#contact__form {
+    width: 438px;
+    padding: 30px;
+    box-shadow: 0 0 4px 2px #ddd;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 50%;
+}
+
+.contact__container {
+    position: relative;
+    max-width: 1140px;
+    margin-inline: auto;
+    top: 0;
+    min-height: 600px;
+}
+
+.form__title {
+    font-size: 34px;
+}
+
+.form--flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 12px;
+}
+
+.form__flex-2 {
+    display: flex;
+    gap: 5%;
+}
+
+.form__flex-2__item {
+    flex: 1;
+    max-width: 47.5%;
+}
+
+.form__input {
+    /* flex: 1; */
+    border-radius: 20px;
+    border: 1px solid #888;
+    font-size: 20px;
+    padding: 16px 12px;
+}
+
+.form__submit {
+    padding: 16px 12px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--color-gray);
+    color: #fff;
+}
+
+.form__mes {
+    height: 150px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#form_subcrib {
+    width: 388px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    background-color: #DA392B;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 4px 2px #ddd;
+    color: #fff;
+}
+
+#form_subcrib label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.form__submit-2 {
+    padding: 16px 12px;
+    border-radius: 20px;
+    background-color: var(--color-gray);
+    color: #fff;
+}
+
+.flex-2 {
+    display: flex;
+}
+
+.flex-2 .form__input {
+    margin-right: 30px;
+    width: 70%;
+}
+
+.why-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.why__item {
+    width: 300px;
+    background-color: #00285C;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 1px #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 40px 50px;
+    text-align: center;
+}
+
+.why__img {
+    height: 90px;
+}
+
+/* reponsive */
+
+@media (min-width: 740px) {
+    .large--hiden {
+        display: none;
+    }
+
+    .card__item:nth-child(1) {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+    }
+
+    .card__item:nth-child(2) {
+        position: absolute;
+        top: -20px;
+        right: 60px;
+    }
+
+    .card__item:nth-child(3) {
+        position: absolute;
+        bottom: -20px;
+        left: 60px;
+    }
+
+    .card__item4 {
+        position: absolute;
+        bottom: -20px;
+        right: 60px;
+    }
+}
+
+@media (max-width: 739px) {
+    #header {
+        position: relative !important;
+    }
+
+    .small--hiden {
+        display: none !important;
+    }
+
+    .store {
+        position: static;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__item {
+        max-width: 100%;
+    }
+
+    #contact {
+        position: static;
+    }
+
+    #contact form {
+        max-width: 100%;
+        position: static;
+    }
+
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 100px;
+        gap: 50px;
+    }
+}
