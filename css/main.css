@@ -1,10 +1,46 @@
+#header {
+    height: 60px;
+    position: fixed;
+    z-index: 100    ;
+    top: 0; left: 0; right: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-family: "Lobster", sans-serif;
+    font-size: 26px;
+    height: 100%;
+    line-height: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-list {
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item:hover {
+    color: var(--title-color);
+}
+
 .nav-list a[href="/index.html"] {
     font-weight: bold;
     color: var(--title-color);
 }
 
 #game {
-    background: url(/images/background-game.jpg);
+    background: url(../images/background-game.jpg);
     height: 800px;
     margin-bottom: 200px;
     position: relative;
@@ -144,7 +180,7 @@
     margin-inline: auto;
     max-width: 1140px;
     min-height: 940px;
-    background: url(/images/bgr-list-game.png) no-repeat;
+    background: url(../images/bgr-list-game.png) no-repeat;
     background-size: cover;
 }
 
@@ -178,7 +214,7 @@
 
 #join {
     padding-top: 100px;
-    background: url(/images/bgr-join.jpg);
+    background: url(../images/bgr-join.jpg);
     color: #fff;
     width: 100%;
 }
@@ -190,7 +226,7 @@
 
 #contact {
     min-height: 600px;
-    background: url(/images/bgr-contact.jpg);
+    background: url(../images/bgr-contact.jpg);
     background-size: cover;
     position: relative;
 }
@@ -312,6 +348,57 @@
 .why__img {
     height: 90px;
 }
+
+.footer1 {
+    border-top: 1px solid #fff;
+    background-color: #00204A;
+    color: #fff;
+    padding-block: 40px;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+@media (min-width: 740px) {
+    footer .flex__item {
+        flex: 1;
+    }
+}
+
+@media (max-width: 739px) {
+    footer .flex__item {
+        flex-shrink: 0;
+        width: 100%;
+    }
+}
+
+.list-link a {
+    display: block;
+    margin-block: 10px;
+}
+
+.footer1 input {
+    width: 100%;
+    margin-block: 12px;
+}
+
+.list-link-icon {
+    font-size: 24px;
+    display: flex;
+    column-gap: 8px;
+}
+
+.footer2 p {
+    padding-block: 12px;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
 
 /* reponsive */
 
